@@ -1,5 +1,5 @@
 // Certificate 
-const fs = require('fs'); 
+const fs = require('fs');  
 
 const privateKey = fs.readFileSync('/etc/letsencrypt/live/omahbata.ddns.net/privkey.pem', 'utf8');
 const certificate = fs.readFileSync('/etc/letsencrypt/live/omahbata.ddns.net/cert.pem', 'utf8');
