@@ -9,8 +9,7 @@ const credentials = {
     cert: certificate,
     ca:ca
 };
-
-const test = "";
+ 
 const path = require('path');
 const { Client, Location, List, Buttons, LocalAuth  } = require('./index');
 const qrcode = require('qrcode');
