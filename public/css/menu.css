@@ -1,0 +1,68 @@
+ul.menu{  
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-top:1rem;
+}
+ul.menu li{ 
+    position: relative;
+    list-style-type: none; 
+    height: 3rem;
+    font-size: 1em;
+    color: #81807f;
+    display: flex;
+} 
+ul.menu li a{
+    width: 100%; 
+    color: #81807f;
+}
+ul.menu li:hover a ion-icon{ 
+    cursor: pointer;
+    font-size: 1.3rem !important;
+}
+ul.menu li a ion-icon{
+    margin-left: 2rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+ul.menu li a span{
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+ul.menu li.select{
+    color: rgb(225, 116, 0);
+}
+ul.menu li.select a::before{ 
+    width: 90%;
+    content: "";
+    background-color: #ff98002b !important;
+    height: 90%;
+    top: 5%;
+    left: 0;
+    position: absolute;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    cursor: pointer;
+}
+ul.menu li.select a::after{ 
+    width: 3px;
+    content: "";
+    background-color: #ff9800 !important;
+    height: 90%;
+    top: 5%;
+    right: 0;
+    position: absolute;
+}
+ul.menu li:hover a::before{ 
+    width: 90%;
+    content: "";
+    background-color: #ffc7742b;
+    height: 90%;
+    top: 5%;
+    left: 0;
+    position: absolute;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    cursor: pointer;
+}

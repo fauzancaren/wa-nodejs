@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        <link href="/css/menu.css" rel="stylesheet" /> 
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="header-sidebar d-flex align-items-center ps-2 py-2" style="height: 4rem; border-bottom: 1px solid #dee2e6; ">
+                    <img src="/asset/icon.png" alt="icon whatsapp" height="50"> 
+                    <div class="d-flex flex-column">
+                        <span class="fw-bold">Whatsapp API OBI</span>
+                        <span class="fw-bold" style="font-size:0.6rem">Support by IT CENTER OMAHBATA</span>
+                    </div> 
+                </div> 
+                <ul class="menu user-select-none">
+                    <li onclick="menu('dashboard',this)"><a class="d-flex align-items-center text-decoration-none"> <ion-icon name="home-sharp"></ion-icon><span>Dashboard</span></a></li>
+                    <li onclick="menu('account',this)"><a class="d-flex align-items-center text-decoration-none"><ion-icon name="person-sharp"></ion-icon><span>Account</span></a></li>
+                </ul>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-white bg-white border-bottom border-left-0 menu-top">
+                    <div class="container-fluid">
+                        <ion-icon name="menu" size="large" id="sidebarToggle"></ion-icon> 
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid" id="content"> 
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script> 
+            menu = function(name,el){
+                $("ul.menu li").removeClass("select");
+                switch(name){
+                    case "dashboard":
+                        window.history.pushState('dashboard', 'dashboard', '/dashboard');  
+                        $(el).addClass("select");
+                        break;
+                        
+                    case "account":
+                        window.history.pushState('account', 'account', '/account');
+                        $(el).addClass("select");   
+                        break;
+                    default:
+                        break;
+                } 
+            } 
+        </script>
+    </body>
+</html>

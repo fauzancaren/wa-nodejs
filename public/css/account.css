@@ -1,0 +1,42 @@
+.box-account {
+    width: 10rem; 
+    border: 1px solid #ebebeb;
+    border-radius: 0.5rem; 
+}
+.box-account:hover{ 
+    background: #ff98002b !important; 
+}
+.box-account span.description{ 
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.box-account span.description{ 
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.box-account .status {
+    display: block;
+    background: #00000017;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.not-found ion-icon {
+    font-size: 8rem;
+}
+.not-found span.header {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.not-found span.detail {
+    font-size: 0.8rem;
+}
+
+.box-account .status:hover {
+    cursor: pointer; 
+}
